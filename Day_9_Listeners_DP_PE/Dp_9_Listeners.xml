@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="com.Day9.C1.Day_9_Listeners_DP_PE.Calculator_C1"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
