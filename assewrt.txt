@@ -1,0 +1,26 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+
+public class SearchTest {
+    public static void main(String[] args) {
+        // Set the path to the chromedriver executable
+        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+
+        // Launch the Chrome browser
+        WebDriver driver = new ChromeDriver();
+
+        // Navigate to the search page
+        driver.get("https://www.example.com/search");
+
+        // Perform the search operation by entering a search query
+        WebElement searchBox = driver.findElement(By.id("search-box"));
+        searchBox.sendKeys("Your search query");
+        searchBox.submit();
+
+        // Wait for the search results to load (You may need to use explicit wait here)
+
+        // Locate the search result elements
+        List<WebElement> searchResults = driver.findElements(By.cssSelector(".search
